@@ -1,0 +1,14 @@
+$indent-unit: 1.5rem;
+
+.block{
+  display:block;
+}
+
+.indent{
+  &1{
+    margin-left:$indent-unit;
+  }
+  &2{
+    margin-left:$indent-unit*2;
+  }
+}
