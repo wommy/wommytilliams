@@ -9,6 +9,7 @@ html(lang="en")
       title wommytilliams
     
     block style
+      link(rel="stylesheet" href="css/app.css")
       link(rel="stylesheet" href="css/app.min.css")
       link(rel="stylesheet" href="css/app-screen.min.css")
       //- link(rel="icon" href="favicon.ico")
@@ -30,25 +31,25 @@ html(lang="en")
     div#mainNav
       nav
         h2(class="selected")
-          a(href="index.html" class="selected") Home
+          a(href="./" class="selected") Home
         h2
           span Experience
           nav
             h2
-              a(href="experience/branding.html") Branding
+              a(href="./brand.html") Branding
             h2
-              a(href="experience/clients.html") Clients
+              a(href="./clients.html") Clients
             h2
-              a(href="experience/resume.html") Resume
+              a(href="./resume.html") Resume
         h2
           span Experiments
           nav
             h2
-              a(href="experiments/feed.html") Feed
+              a(href="./feed.html") Feed
             h2
-              a(href="experiments/grid.html") Grid
+              a(href="./grid.html") Grid
         h2
-          a(href="media.html") Media
+          a(href="./media.html") Media
       nav#social
         span contact
         a(href='mailto:tom@technomad.media?Subject=Job | from wommytilliams.com' target="_blank")
@@ -72,4 +73,4 @@ html(lang="en")
         | {{ content }}
     
     block scripts
-      script(src="scripts/app.min.js")
+      script(src="./_scripts/app.min.js")

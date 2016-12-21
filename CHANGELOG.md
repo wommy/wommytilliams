@@ -8,10 +8,23 @@ TODO
   scss && assets
   
   readme
+  
+  jekyll <= pug
+    prepend yaml 
 ```
 
+## 0.0.2 / 2016-08-29
 
-## 0.1.0 / 2016-08-27
+```
+index.pug
+  reminant md => pug
+  
+app.scss
+
+
+```
+
+## 0.0.1 / 2016-08-27
 
 ```
 jekyll new
