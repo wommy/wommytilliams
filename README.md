@@ -20,6 +20,15 @@ build by [wommy](//github.com/wommy)
     prepend yaml 
 ```
 
+#### 0.0.3 / 2016-12-20
+
+```
+flushed out product vision
+  subpages ( /experience, /experiments, /media)
+    pug <= md legacy
+
+```
+
 #### 0.0.2 / 2016-08-29
 
 ```

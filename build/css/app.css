@@ -18,3 +18,13 @@ ul {
 
 .subtext {
   margin-top: 0; }
+
+nav span {
+  display: block;
+  padding: .125rem .5rem;
+  width: auto;
+  margin: 0;
+  font-size: 1.25rem;
+  
+  font-weight:bold;
+}
