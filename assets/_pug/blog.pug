@@ -1,0 +1,74 @@
+extends _template.pug
+
+block nav
+  div
+    a(href='./') home
+    span  > category > 
+    a(href='#runningdoc') runningdoc
+
+block content
+
+  -
+    var articles = [
+        "1447284463000 horoscope and planet in sign",
+        "1447278043000 tarot year",
+        "1448489484000 wordpress calypso",
+        "1448993590000 exploring cafeastrology",
+        "1449516576000 fascism reddit exposition",
+        "1449715620000 dance",
+        "1449966367000 more politics",
+        "1450176836000 politics and economics",
+        "1451160542000 knives",
+        "1455612358000 Tomorrows Social Norms _ Video Playlist"
+      ].reverse();
+
+    var runningdoc = [
+        1447117135000,
+        1447275128000,
+        1449093780000,
+        1449340091000,
+        1449604101000,
+        1449766786000,
+        1450485829000,
+        1450892055000,
+        1450946163000,
+        1451169519000,
+        1451263740000,
+        1452129462000,
+        1452190894000,
+        1452278447000,
+        1452569911000,
+        1453235286000,
+        1453329862000
+      ].reverse();
+
+  mixin newPost3(input)
+    -
+      var jekyllanyonExternal = '//wommy.github.io/jekyll-lanyon/post/'
+    
+      var array = input.split(' ')
+      
+      var date0 = Number(array.shift());
+      var date = new Date(date0).toISOString().split('T')[0]
+
+      var title = array.join('-');
+      var full = jekyllanyonExternal + date + '-' + title;
+    
+    a.block(href=full)= date + ' - ' + array.join(' ').toUpperCase()
+
+  mixin newPost4(input)
+    -
+      var jekyllanyonExternal = '//wommy.github.io/jekyll-lanyon/post/'
+      
+      var date = new Date(Number(input)).toISOString().split('T')[0]
+
+      var full = jekyllanyonExternal + date + '-' + 'runningdoc';
+    
+    a.block(href=full)= date + ' - ' + "RUNNINGDOC"
+
+  .posts
+    each article in articles
+      +newPost3(article)
+    hr
+    each article in runningdoc
+      +newPost4(article)

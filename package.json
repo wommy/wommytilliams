@@ -4,19 +4,19 @@
   "description": "jekyll 4 wommytilliams.com",
   "main": "index.js",
   "scripts": {
-    "pug": "pug assets/_pug --out build/ -P -w",
-    "scss": "node-sass assets/_scss/ -o build/css -w",
-    "serve": "browser-sync start --host $IP --port $PORT -s 'build' -f 'build'",
-    "dev": "parallelshell 'npm run pug' 'npm run scss' 'npm run serve'"
+    "pug": "pug assets/_pug --out build/ -P -s",
+    "scss": "node-sass assets/_scss/ -o build/css",
+    "serve": "browser-sync start -s 'build' -f 'build' --host $IP --port $PORT",
+    "dev": "parallelshell 'npm run pug -- --watch' 'npm run scss' 'npm run scss -- --watch' 'npm run serve'"
   },
   "keywords": [],
   "author": "wommy",
   "license": "Apache-2.0",
   "devDependencies": {
-    "browser-sync": "^2.14.0",
-    "node-sass": "^3.8.0",
+    "browser-sync": "^2.18.8",
+    "node-sass": "^3.13.1",
     "parallelshell": "^2.0.0",
-    "pug": "^2.0.0-beta6",
+    "pug": "^2.0.0-beta9",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
