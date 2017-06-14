@@ -1,0 +1,10 @@
+extends(src='_blank.sgr')
+block(name='content')
+  script(type='text/javascript').
+
+    function buttz( obj ){
+      var foo = new Date(obj).getTime();
+      document.write(foo);
+    };
+
+    buttz("Wed Jan 20 2016 17:44:22 GMT-0500 (EST)")

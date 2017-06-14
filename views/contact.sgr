@@ -1,0 +1,23 @@
+extends(src='_blank.sgr')
+  //block(name='style')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+  block(name='content')
+    article#contact
+      h3
+        a(href="#contact") contact
+      nav
+        a(href='mailto:tom@technomad.media?Subject=Job | from wommy.io' target="_blank")
+          img.social(src='img/social/email.svg')
+          h2 tom@technomad.media
+        a(href='#' onclick=" noDiscriminate(' https://www.facebook.com/Froggie92 ') ")
+          img.social(src='img/social/facebook.svg')
+          h2 facebook
+        a(href='#' onclick=" noDiscriminate(' http://twitter.com/froggie92 ') ")
+          img.social(src='img/social/twitter.svg')
+          h2 twitter
+        a(href='#' onclick=" noDiscriminate(' https://plus.google.com/u/0/118102255716845472363/posts ') ")
+          img.social(src='img/social/google-plus.svg')
+          h2 google+
+        a(href='#' onclick=" noDiscriminate(' https://instagram.com/wommytilliams/ ') ")
+          img.social(src='img/social/instagram.svg')
+          h2 instagram

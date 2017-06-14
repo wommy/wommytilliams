@@ -1,22 +1,32 @@
 {
-  "name": "wommytilliams",
-  "version": "1.0.0",
-  "description": "jekyll 4 wommytilliams.com",
-  "main": "index.js",
+  "name": "www_wommy_io",
+  "version": "0.2.0",
+  "description": "wommy.io in spike",
+  "main": "app.js",
+  "private": true,
+  "repository": "https://github.com/wommy/www-wommyio",
   "scripts": {
-    "pug": "pug assets/_pug --out build/ -P -s",
-    "scss": "node-sass assets/_scss/ -o build/css",
-    "serve": "browser-sync start -s 'build' -f 'build' --host $IP --port $PORT",
-    "dev": "parallelshell 'npm run pug -- --watch' 'npm run scss' 'npm run scss -- --watch' 'npm run serve'"
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava"
   },
   "keywords": [],
   "author": "wommy",
   "license": "Apache-2.0",
+  "bugs": "https://github.com/wommy/www-wommyio/issues",
+  "dependencies": {
+    "reshape-standard": "^1.0.0",
+    "spike-css-standards": "^1.0.0",
+    "spike-js-standards": "^2.0.1",
+    "spike-page-id": "^1.0.0",
+    "webpack": "^2.3.3"
+  },
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "node-sass": "^3.13.1",
-    "parallelshell": "^2.0.0",
-    "pug": "^2.0.0-beta9",
-    "pug-cli": "^1.0.0-alpha6"
+    "ava": "^0.19.0",
+    "rimraf": "^2.6.0",
+    "snazzy": "^6.0.0",
+    "spike-core": "^1.0.0",
+    "standard": "^10.0.0"
   }
 }

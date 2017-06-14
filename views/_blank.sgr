@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    block(name='meta')
+      meta(charset="utf-8")
+      meta(http-equiv="x-ua-compatible" content="ie=edge")
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      meta(name='author' content='wommy')
+      meta(name='description' content='')
+    block(name='title'): title wommy.io
+    block(name='stylesheets'): link(rel='stylesheet' href='css/index.css')
+  body
+    block(name='nav')
+      include(src='_nav.sgr')
+    div#content
+      block(name='content')
+    block(name='javascript')
+      script(src='js/main.js' defer)
