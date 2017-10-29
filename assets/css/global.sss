@@ -1,0 +1,85 @@
+:root
+  --u: 1rem
+  --u-indent: calc(var(--u) * 1.5)
+  --u-margin: calc(var(--u) * .75)
+
+.block
+  display: block
+
+.inline-block
+  display: inline-block
+
+.indent
+  &1
+    margin-left: var(--u-indent)
+  &2
+    margin-left: calc(var(--u-indent) * 2)
+
+.subtext
+  margin-top: 0
+
+.social
+  width: 1.75rem
+  height: 1.75rem
+
+.wommyImg
+  height: 24rem
+  width: 16rem
+  border-radius: 1rem
+  float: right
+  top: -4rem
+  position: relative
+  @media (max-width: 800px)
+    height: 100%
+    width: 100%
+    border-radius: 1.5rem
+    position: inherit
+    float: none
+
+
+body
+  margin: 1rem
+  background-color: #EEE
+  font-family: tahoma, sans-serif, system-ui
+  font-variant: small-caps
+  word-wrap: break-word
+  @media (max-width: 800px)
+    margin: 0
+    background-color: #CECECE
+    font-size: 100%
+a
+  text-decoration: none
+  font-weight: 700
+  &:link, &:visited
+    color: hsla(220,90%,40%,.8)
+  &:hover
+    color: hsla(220,100%,40%,1)
+  &:active, &:focus
+    color: none
+  &[name], &[name]
+    text-decoration: underline
+  :target
+    background-color: hsla(220,75%,45%,.7)
+  .selected
+    background-color: #fff
+    border-radius: .25rem
+    & a
+      border-right: none
+    @media (max-width: 800px)
+      background-color: yellow !important
+      border-right: none
+h3
+  border-bottom: solid .125rem #000
+  font-weight: 400
+  padding-left: 2.5rem
+  margin: 2rem 0
+  font-size: 2rem
+  padding-bottom: .25rem
+  margin-bottom: .5rem
+p
+  margin: .75rem 0
+blockquote
+  margin: .75rem 0
+  margin-left: 1.5rem
+iframe
+  width: 100%
