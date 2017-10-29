@@ -10,9 +10,10 @@ html(lang="en")
     block(name='title'): title wommy.io
     block(name='stylesheets'): link(rel='stylesheet' href='css/index.css')
   body
-    block(name='nav')
-      include(src='_nav.sgr')
-    div#content
-      block(name='content')
+    main(role='main' id='{{ pageId }}')
+      block(name='nav')
+        include(src='_nav.sgr')
+      div#content
+        block(name='content')
     block(name='javascript')
       script(src='js/main.js' defer)
