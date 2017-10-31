@@ -1,7 +1,7 @@
 extends(src='_blank.sgr')
   block(name='content')
     article(id='')
-      img.wommyImg(src="img/wommyM.jpg")
+      img.wommyImg(src="img/wommy.jpg")
       h2 welcome to my portfolio
       p feel free to check out
       a.block.indent1(href="media") my media
