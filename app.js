@@ -6,8 +6,6 @@ const sugarml = require('sugarml')
 const sugarss = require('sugarss')
 const env = process.env.SPIKE_ENV
 
-const normalize = require('postcss-normalize')
-
 module.exports = {
   devtool: 'source-map',
   matchers: { html: '*(**/)*.sgr', css: '*(**/)*.sss' },
@@ -21,7 +19,7 @@ module.exports = {
     parser: sugarss,
     minify: env === 'production',
     warnForDuplicates: env !== 'production',
-    prependPlugins: normalize()
+    prependPlugins: require('postcss-normalize')()
   }),
   babel: jsStandards()
 }

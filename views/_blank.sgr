@@ -8,11 +8,12 @@ html(lang="en")
       meta(name='author' content='wommy')
       meta(name='description' content='')
     block(name='title'): title wommy.io
-    block(name='stylesheets'): link(rel='stylesheet' href='css/global.css')
+    block(name='stylesheets')
+      link(rel='stylesheet' href='css/global.css')
   body
+    block(name='nav')
+      include(src='lib/_nav.sgr')
     main(role='main' id='{{ pageId }}')
-      block(name='nav')
-        include(src='_nav.sgr')
       div#content
         block(name='content')
     block(name='javascript')

@@ -1,0 +1,59 @@
+component
+  style
+    nav
+      padding-left: var(--u-indent, 1rem)
+      margin: var(--u-indent, 1rem) 0
+      list-style-type: none
+      & ul
+        margin: calc(var(--u-margin, 1rem) * .5) 0
+      & span
+        display: block
+        padding: .125rem .5rem
+        width: auto
+        margin: 0
+        font-size: 1.25rem
+        font-weight: 700
+    h2 span, nav a, nav h2
+      display: block
+      padding: .125rem .5rem
+      width: auto
+      margin: 0
+      font-size: 1.25rem
+    h2 nav
+      margin-left: 1rem
+    a h2, a img, h2 a
+      display: inline
+      vertical-align: bottom
+    img + h2
+      padding-left: 0
+    a h2, h2 a
+      line-height: 2rem
+  nav#mobileNav(onclick="toggle( 'toggleMe' )")
+    i#hamburger(class='fa fa-bars' aria-hidden='true')
+    nav#toggleMe(style="display:none;")
+      a(href="/" class="selected") home
+      span Experience
+      a(href="/brand") Branding
+      a(href="/clients") Clients
+      a(href="/resume") Resume
+      span Experiments
+      a(href="/feed") Feed
+      a(href="/grid") Grid
+      a(href="/media") Media
+  nav#mainNav
+    a(href="/") home
+    span websites
+    ul
+      a(href="/stack") stack
+      a(href="/brand") branding
+      a(href="/clients") clients
+      a(href="/components") components
+      ul
+        a(href="/components#feed") feed
+        a(href="/components#grid") grid
+    a(href="/media") media
+    ul
+      a(href="/media#blog") blog
+      a(href="/media#videos") videos
+    a(href="/about") about
+    a(href="/contact") contact
