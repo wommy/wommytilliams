@@ -1,0 +1,46 @@
+wommy-www
+===
+
+=== blank
+
+TODO
+
+=== template
+
+nav
+	inner
+		home
+		experience
+			branding
+			clients
+			resume
+		experiments
+			feed
+			grid
+		media
+	outer
+		icon + title
+			[email, facebook, twitter, google+, instagram]
+main
+
+=== index
+
+section
+	img: wommy.img
+	h1: welcome to my portfolio
+	p: feel free to check out
+		a: my media
+		a: my clients
+		p: my experiments
+			a feed
+			a grid
+
+section
+	a #inspiration : inspiration/philosophy
+	p: words
+		ul: li: [simple, concise, clean, eloquent, minimal, transparent]
+	p: websites
+
+TODO finish
+
+===
