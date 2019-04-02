@@ -2,15 +2,28 @@
   "name": "www.wommy.io",
   "author": "wommy",
   "description": "wommy.io build with technomad npmbp",
-  "keywords": ["wommy","static site generator","technomad","web","design","development","pug","jade","sass","node-sass","browser-sync","parallelshell"],
+  "keywords": [
+    "wommy",
+    "static site generator",
+    "technomad",
+    "web",
+    "design",
+    "development",
+    "pug",
+    "jade",
+    "sass",
+    "node-sass",
+    "browser-sync",
+    "parallelshell"
+  ],
   "version": "3.0.0",
   "main": "index.js",
   "license": "Apache-2.0",
   "devDependencies": {
-    "browser-sync": "^2.14.0",
-    "node-sass": "^3.8.0",
+    "browser-sync": "^2.26.3",
+    "node-sass": "^3.13.1",
     "parallelshell": "^2.0.0",
-    "pug": "^2.0.0-beta6",
+    "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6"
   },
   "scripts": {
