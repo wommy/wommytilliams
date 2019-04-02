@@ -1,0 +1,91 @@
+
+global
++ utilities?
+page
+component
+- inline
+
+component file?
+
+in the head
+- global file
++ page 
+
+components inline?
++ header file
+
+template + content
+
+are the utilities the globals?
+
+
+
+
+===
+
+.block
+.inline block
+.indent1
+.indent2
+ul
+	&.list-none
+.subtext
+nav span
+
+===
+
+body
+a                           
+	&:link, &:visited
+	&:hover
+	&:active, &:focus
+		a[name], h2[name]
+		:target
+		article:target
+h3
+p
+blockquote
+
+#content, #mainNav
+
+#mainNav
+	#social
+	#subnav
+	
+		& .pinned
+		h2 span, nav a, nav h2
+		h2 nav
+		.selected
+
+			& a
+
+	a h2, a img, h2 a
+	.social
+		img+h2
+	a h2, h2 a
+	iframe
+
+#content
+	
+	.wommyImg
+	& article
+	#grid article
+
+===
+
+@media
+	max-width:800px
+		.wommyImg
+		#hamburger
+		#toggleMe
+			& span
+			& a
+		.selected
+		body
+		#content
+			& article
+				& :first-child & p:first-child
+		#mainNav
+
+	min-width:800px
+		#mobileNav

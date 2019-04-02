@@ -40,7 +40,104 @@ section
 	p: words
 		ul: li: [simple, concise, clean, eloquent, minimal, transparent]
 	p: websites
+	p: quotes
+		img
+
+section
+	a #hobbies : hobbies :: aspects that define me
+	hr
+
+	biking
+		this will be my 6th year biking in chicago
+		check out my biking video here
+
+	kungfu
+		ive been practicing kungfu for over a year now
+		i have a couple videos on my media page
+		ive also been working on their website
+		you can see the entry on my client page here
+
+	psych
+		my psych career is long and winding
+		my first introduction to psychology was thru myers briggs
+		hours of trawling google led me to
+
+		socionics
+			socionics was everything i was looking for
+
+			socionics rationality / irrationality
+			replaces mbti's judgment / perception
+			mbti's judgment / perception still exists within socionics, but it is a second level dichotomy, static / dynamic
+			socionics goes into much greater dtail than myers briggs:
+				intertype relations - descriptions of interactions between types
+				small groups - common ground between types
+				subtypes - no two types are teh same
+				model a -
+				second level dichotomies
+				informational elements
+				functions which allow for functional dichotomies
+			informationa metabolism - can be simplified as follows: 
+			every action you do, is based on information
+
+		horoscopes
+			a: the secret language
+			my number one to-go-to
+
+			p
+				here to can check a birthday
+				( check you and a parent )
+				and your relationships with other people
+				( check an old or current flame )
+
+			cafe astrology
+
+				i personally like their natal chart
+				and their relationship chart
+
+		tarot year
+			a: heres an easy calculator i just found
+
+			p:
+				for example:
+				i want to check for my current year
+				since my birthday nas not happened yet,
+				i check for last year
+
+			a: long descriptions
+			a: short description
+
+			a: this site has more descriptions
+			but you have to know your number,
+			use calc above
+
+=== branding
+
+section
+	froggie92
+	wommytilliams
+	technomad
+
+=== clients
+
+section
+	wingchun
+	geraldhaman
+	jorris
+	nickpizana
+	eightcell
+	film//play
+
+=== resume
 
 TODO finish
 
-===
+=== media
+
+section
+ create a fresh path
+section
+	wing chun videos
+section
+	john orris originals
+section
+	pop corn bulb
