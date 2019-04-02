@@ -1,16 +1,10 @@
 {
-  "name": "wommytilliams",
-  "version": "1.0.0",
-  "description": "jekyll 4 wommytilliams.com",
-  "main": "index.js",
-  "scripts": {
-    "pug": "pug assets/_pug --out build/ -P -w",
-    "scss": "node-sass assets/_scss/ -o build/css -w",
-    "serve": "browser-sync start --host $IP --port $PORT -s 'build' -f 'build'",
-    "dev": "parallelshell 'npm run pug' 'npm run scss' 'npm run serve'"
-  },
-  "keywords": [],
+  "name": "www.wommy.io",
   "author": "wommy",
+  "description": "wommy.io build with technomad npmbp",
+  "keywords": ["wommy","static site generator","technomad","web","design","development","pug","jade","sass","node-sass","browser-sync","parallelshell"],
+  "version": "3.0.0",
+  "main": "index.js",
   "license": "Apache-2.0",
   "devDependencies": {
     "browser-sync": "^2.14.0",
@@ -18,5 +12,11 @@
     "parallelshell": "^2.0.0",
     "pug": "^2.0.0-beta6",
     "pug-cli": "^1.0.0-alpha6"
+  },
+  "scripts": {
+    "pug": "pug assets/_pug --out build/ -P -w",
+    "scss": "node-sass assets/_scss/ -o build/css -w",
+    "serve": "browser-sync start --host $IP --port $PORT -s 'build' -f 'build'",
+    "dev": "parallelshell 'npm run pug' 'npm run scss' 'npm run serve'"
   }
 }
