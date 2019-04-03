@@ -13,8 +13,7 @@
     "jade",
     "sass",
     "node-sass",
-    "browser-sync",
-    "parallelshell"
+    "browser-sync"
   ],
   "version": "3.0.0",
   "main": "index.js",
@@ -22,14 +21,13 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "node-sass": "^3.13.1",
-    "parallelshell": "^2.0.0",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6"
   },
   "scripts": {
+    "start": "npm run pug & npm run scss & npm run serve",
     "pug": "pug assets/_pug --out build/ -P -w",
     "scss": "node-sass assets/_scss/ -o build/css -w",
-    "serve": "browser-sync start --host $IP --port $PORT -s 'build' -f 'build'",
-    "dev": "parallelshell 'npm run pug' 'npm run scss' 'npm run serve'"
+    "serve": "browser-sync start --host $IP --port $PORT -s 'build' -f 'build'"
   }
 }
