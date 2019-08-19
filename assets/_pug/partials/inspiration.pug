@@ -3,8 +3,9 @@ h2
 div
   p words
   ul.list-none
-    each val in ['simple','concise','clean','eloquent','minimal','transparency']
-      li= val
+    - var words = ['simple','concise','clean','eloquent','minimal','transparency']
+    each word in words
+      li= word
 div
   p websites
   div.indent1

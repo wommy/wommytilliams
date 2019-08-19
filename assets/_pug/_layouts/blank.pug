@@ -6,12 +6,17 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     
     block title
-      title wommytilliams
+      title 
     
     block style
+      link(rel="stylesheet" href="css/app.css")
 
   body
-    div#content
+    block nav
+
+    main#content
       block content
+        | {{ content }}
     
     block scripts
+      script(src="_scripts/app.min.js")

@@ -28,6 +28,6 @@
     "start": "npm run pug & npm run scss & npm run serve",
     "pug": "pug assets/_pug --out build/ -P -w",
     "scss": "node-sass assets/_scss/ -o build/css -w",
-    "serve": "browser-sync start --host $IP --port $PORT -s 'build' -f 'build'"
+    "serve": "browser-sync start -s 'build' -f 'build' --no-open"
   }
 }
