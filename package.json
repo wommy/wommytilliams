@@ -14,7 +14,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "browser-sync": "^2.14.0",
-    "node-sass": "^3.8.0",
+    "node-sass": "^4.14.1",
     "parallelshell": "^2.0.0",
     "pug": "^2.0.0-beta6",
     "pug-cli": "^1.0.0-alpha6"
