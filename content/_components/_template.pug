@@ -9,63 +9,63 @@ html(lang="en")
       title wommytilliams
     
     block style
-      link(rel="stylesheet" href="css/app.css")
-      link(rel="stylesheet" href="css/app.min.css")
-      link(rel="stylesheet" href="css/app-screen.min.css")
+      link(rel="stylesheet" href="/static/_scss/app.css")
+      link(rel="stylesheet" href="/static/_scss/app.min.css")
+      link(rel="stylesheet" href="/static/_scss/app-screen.min.css")
       //- link(rel="icon" href="favicon.ico")
 
   body
     nav#mobileNav(onclick="toggle( 'toggleMe' )")
-      img#hamburger(src='img/hamburger.svg')
+      img#hamburger(src='/static/_img/hamburger.svg')
       nav#toggleMe(style="display:none;")
-        a(href="index.html" class="selected") home
+        a(href="/" class="selected") home
         span Experience
-        a(href="experience/branding.html") Branding
-        a(href="experience/clients.html") Clients
-        a(href="experience/resume.html") Resume
+        a(href="/branding") Branding
+        a(href="/clients") Clients
+        a(href="/resume") Resume
         span Experiments
-        a(href="experiments/feed.html") Feed
-        a(href="experiments/grid.html") Grid
-        a(href="media.html") Media
+        a(href="/feed") Feed
+        a(href="/grid") Grid
+        a(href="/media") Media
     
     div#mainNav
       nav
         h2(class="selected")
-          a(href="./" class="selected") Home
+          a(href="/" class="selected") Home
         h2
           span Experience
           nav
             h2
-              a(href="./brand.html") Branding
+              a(href="/brand") Branding
             h2
-              a(href="./clients.html") Clients
+              a(href="/clients") Clients
             h2
-              a(href="./resume.html") Resume
+              a(href="/resume") Resume
         h2
           span Experiments
           nav
             h2
-              a(href="./feed.html") Feed
+              a(href="/feed") Feed
             h2
-              a(href="./grid.html") Grid
+              a(href="/grid") Grid
         h2
-          a(href="./media.html") Media
+          a(href="/media") Media
       nav#social
         span Contact
         a(href='mailto:tom@technomad.media?Subject=Job | from wommytilliams.com' target="_blank")
-          img.social(src='img/social/email.svg')
+          img.social(src='/static/_img/social/email.svg')
           h2 tom@technomad.media
         a(href='#' onclick=" noDiscriminate(' https://www.facebook.com/Froggie92 ') ")
-          img.social(src='img/social/facebook.svg')
+          img.social(src='/static/_img/social/facebook.svg')
           h2 facebook
         a(href='#' onclick=" noDiscriminate(' http://twitter.com/froggie92 ') ")
-          img.social(src='img/social/twitter.svg')
+          img.social(src='/static/_img/social/twitter.svg')
           h2 twitter
         a(href='#' onclick=" noDiscriminate(' https://plus.google.com/u/0/118102255716845472363/posts ') ")
-          img.social(src='img/social/google-plus.svg')
+          img.social(src='/static/_img/social/google-plus.svg')
           h2 google+
         a(href='#' onclick=" noDiscriminate(' https://instagram.com/wommytilliams/ ') ")
-          img.social(src='img/social/instagram.svg')
+          img.social(src='/static/_img/social/instagram.svg')
           h2 instagram
         
     div#content
@@ -73,4 +73,4 @@ html(lang="en")
         | {{ content }}
     
     block scripts
-      script(src="./_scripts/app.min.js")
+      script(src="/static/_scripts/app.min.js")
