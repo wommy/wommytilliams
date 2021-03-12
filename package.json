@@ -12,6 +12,7 @@
   "scripts": {
     "content": "cp content/* tms/11ty/ -r",
     "static": "cp static/ tms/ -r",
-    "prebuild": " yarn run content; yarn run static;"
+    "prebuild": "yarn run content; yarn run static;",
+    "dev": "yarn run prebuild; cd tms/; yarn run dev"
   }
 }
