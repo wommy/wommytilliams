@@ -1,21 +1,32 @@
-$u: 1rem;
-$u-indent: $u*1.5;
-$u-margin: $u*.75;
-
-.block{display:block;}
-.inline-block{display:inline-block;}
-
-.indent{
-  &1{margin-left:$u-indent;}
-  &2{margin-left:$u-indent*2;}
+:root {
+  --u-indent: 1.5rem;
+  --u-indent2: 3rem;
+  --u-margin: .75rem;
 }
 
-ul{
-  padding-left:$u-indent;
-  margin:$u-margin 0;
-  &.list-none{list-style-type:none;}
+.block { 
+  display: block;
+}
+.inline-block { 
+  display: inline-block;
 }
 
-.subtext{
-  margin-top:0;
+.indent1 {
+  margin-left: var(--u-indent);
+}
+.indent2 { 
+  margin-left: var(--u-indent2);
+}
+
+ul {
+  padding-left: var(--u-indent);
+  margin: var(--u-margin) 0;
+}
+
+ul.list-none { 
+  list-style-type: none;
+}
+
+.subtext {
+  margin-top: 0;
 }
